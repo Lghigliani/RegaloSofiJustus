@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="theme-color" content="#241408">
+  <title>Para Sofía y Justus</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="Regalo%20abierto.png">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="gift">
+    <div class="gift-frame">
+      <img
+        id="gift-image"
+        class="gift-image"
+        src="Regalo%20cerrado.png"
+        alt="Regalo cerrado para Sofía y Justus"
+        width="1448"
+        height="1086"
+        role="button"
+        tabindex="-1"
+        aria-label="Abrir el regalo"
+        aria-disabled="true"
+        aria-describedby="countdown"
+        draggable="false"
+      >
+    </div>
+    <p id="countdown" class="countdown" role="timer" aria-live="off" hidden></p>
+    <p id="gift-status" class="visually-hidden" role="status" aria-live="polite"></p>
+    <noscript><p class="countdown">Activá JavaScript para abrir el regalo.</p></noscript>
+  </main>
+</body>
+</html>
