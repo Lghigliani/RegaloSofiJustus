@@ -67,6 +67,15 @@ body {
   text-wrap: balance;
 }
 
+.opening-time {
+  margin: 8px 0 0;
+  font-size: clamp(13px, 1.9vw, 16px);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
+  text-wrap: balance;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
