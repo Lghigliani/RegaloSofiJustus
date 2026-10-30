@@ -162,8 +162,9 @@
       minute: "2-digit",
       timeZoneName: "short",
     });
+    const detectedTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     openingTimeLabel.textContent =
-      `Opening: ${localFormatter.format(new Date(openingTime))} (your local time).`;
+      `Opening: ${localFormatter.format(new Date(openingTime))} — ${detectedTimeZone}.`;
   }
 
   function updateCountdown() {
